@@ -1,0 +1,11 @@
+name: Super-Linter
+
+on: push
+
+jobs:
+  super-lint:
+    name: Linkt code base
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
