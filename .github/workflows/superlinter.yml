@@ -5,11 +5,7 @@ on: push
 jobs:
   super-lint:
     name: Linkt code base
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}	
